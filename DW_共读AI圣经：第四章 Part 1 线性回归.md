@@ -1,4 +1,4 @@
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default"></script>
 第一章中有一个核心思想：
 
 > 机器学习就是从数据中学习概率
