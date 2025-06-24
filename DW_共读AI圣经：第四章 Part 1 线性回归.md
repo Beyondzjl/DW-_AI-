@@ -45,6 +45,7 @@ $$p\left(t\mid\boldsymbol{x},\boldsymbol{w},\sigma^{2}\right)=\mathcal{N}\left(t
 
 
 当我们有多个观测数据时，就可以把 $t$ 看成时一个列向量，由于数据点都是从分布式中独立产生的，那么就可以得到似然函数
+
 $$p\left(\boldsymbol{t}\mid\boldsymbol{X},\boldsymbol{w},\sigma^{2}\right)=\prod_{n=1}^{N}\mathcal{N}\left(t_{n}\mid\boldsymbol{w}^{\mathrm{T}}\phi\left(\boldsymbol{x}_{n}\right),\sigma^{2}\right)$$
 
 以下证明最大化似然函数就是最小化误差函数，可以由此确定参数的值：
@@ -63,7 +64,7 @@ $$\nabla_{\boldsymbol{w}} \ln p(\boldsymbol{t} \mid \boldsymbol{X}, \boldsymbol{
 
 当梯度设为0的时候，就可以进行求解：
 
-$$0 = \sum_{n=1}^{N} t_{n} \phi(\boldsymbol{x}_{n})^{\mathrm{T}} - \boldsymbol{w}^{\mathrm{T}} \left( \sum_{n=1}^{N} \phi(\boldsymbol{x}_{n}) \phi(\boldsymbol{x}_{n})^{\mathrm{T}} \right)$$
+$$\0 = \sum_{n=1}^{N} t_{n} \phi(\boldsymbol{x}_{n})^{\mathrm{T}} - \boldsymbol{w}^{\mathrm{T}} \left( \sum_{n=1}^{N} \phi(\boldsymbol{x}_{n}) \phi(\boldsymbol{x}_{n})^{\mathrm{T}} \right)$$
 
 $$\boldsymbol{w}_{\mathrm{ML}} = (\boldsymbol{\Phi}^{\mathrm{T}} \boldsymbol{\Phi})^{-1} \boldsymbol{\Phi}^{\mathrm{T}} \boldsymbol{t}$$
 
