@@ -26,6 +26,7 @@ $$ y(x,w)=w_{0}+\sum_{j=1}^{M-1} w_{j}\phi_{j}(x) $$
 
 这是一个简单的线性函数可以用来描述一个线性回归模型，其中含有自变量的部分叫做**基函数**。
 （常见基函数在后面介绍）
+
  $$y(x, w) = \sum_{j=0}^{M-1} w_j \phi_j(x)$$
 
 加入一个偏置参数就可以统一为以上函数，就可以看做是一个简单的神经网络。
@@ -63,6 +64,7 @@ $$\nabla_{\boldsymbol{w}} \ln p(\boldsymbol{t} \mid \boldsymbol{X}, \boldsymbol{
 当梯度设为0的时候，就可以进行求解：
 
 $$0 = \sum_{n=1}^{N} t_{n} \phi(\boldsymbol{x}_{n})^{\mathrm{T}} - \boldsymbol{w}^{\mathrm{T}} \left( \sum_{n=1}^{N} \phi(\boldsymbol{x}_{n}) \phi(\boldsymbol{x}_{n})^{\mathrm{T}} \right)$$
+
 $$\boldsymbol{w}_{\mathrm{ML}} = (\boldsymbol{\Phi}^{\mathrm{T}} \boldsymbol{\Phi})^{-1} \boldsymbol{\Phi}^{\mathrm{T}} \boldsymbol{t}$$
 
 同理也可以求得其他参数。
