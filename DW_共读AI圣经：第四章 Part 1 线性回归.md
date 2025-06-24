@@ -1,4 +1,4 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default"></script>
+
 第一章中有一个核心思想：
 
 > 机器学习就是从数据中学习概率
@@ -64,7 +64,7 @@ $$\nabla_{\boldsymbol{w}} \ln p(\boldsymbol{t} \mid \boldsymbol{X}, \boldsymbol{
 
 当梯度设为0的时候，就可以进行求解：
 
-$$\0 = \sum_{n=1}^{N} t_{n} \phi(\boldsymbol{x}_{n})^{\mathrm{T}} - \boldsymbol{w}^{\mathrm{T}} \left( \sum_{n=1}^{N} \phi(\boldsymbol{x}_{n}) \phi(\boldsymbol{x}_{n})^{\mathrm{T}} \right)$$
+$0 = \sum_{n=1}^{N} t_{n} \phi(\boldsymbol{x}_{n})^{\mathrm{T}} - \boldsymbol{w}^{\mathrm{T}} \left( \sum_{n=1}^{N} \phi(\boldsymbol{x}_{n}) \phi(\boldsymbol{x}_{n})^{\mathrm{T}} \right)$
 
 $$\boldsymbol{w}_{\mathrm{ML}} = (\boldsymbol{\Phi}^{\mathrm{T}} \boldsymbol{\Phi})^{-1} \boldsymbol{\Phi}^{\mathrm{T}} \boldsymbol{t}$$
 
